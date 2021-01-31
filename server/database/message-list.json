@@ -1,0 +1,74 @@
+{
+	"messages": [
+		{
+			"id": 1,
+			"title": "Server",
+			"body": "Servern använder Express som dels tillhandahåller de statiska HTML-, CSS- och JavaScript-filer som Webpack bundlat och dels tillhandahåller två endpoints för ett tänkt REST-API. GET messages returnerar alla meddelanden medan POST messages skapar ett meddelande och returnerar dess ID.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:04:00.000Z"
+		},
+		{
+			"id": 2,
+			"title": "JavaScript/TypeScript",
+			"body": "Serverdelen och enhetstesterna är skrivna i JavaScript medan klientdelen är skriven i TypeScript. Där används absoluta sökvägar för alla importer. Jag tog friheten att använda TypeScript eftersom vi har pratat om att migrera er kodbas till TypeScript.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:15:00.000Z"
+		},
+		{
+			"id": 3,
+			"title": "HTML och CSS",
+			"body": "Instruktionerna sa att jag skulle använda SASS, LESS eller SCSS. Jag har dock inte arbetat med dem och istället för att låtsas kunna dem så visar jag CSS-in-JS som jag själv föredrar. Jag ser helst att majoriteten av all styling görs i ett komponentbibliotek som sedan används av applikationens React-komponenter. På samma sätt behöver jag inte skriva så mycket HTML heller.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:10:00.000Z"
+		},
+		{
+			"id": 4,
+			"title": "Material UI",
+			"body": "Jag använder Material UI då jag hörde att även ni gör det och jag är van med att använda Material UI sedan tidigare. Själva GUI:t blev en lista med expansionspaneler för att enkelt kunna dölja/visa meddelandetexten. En tabell hade gjort sorteringen lite enklare med klick på rubrikraderna.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:25:00.000Z"
+		},
+		{
+			"id": 5,
+			"title": "State-hantering",
+			"body": "Jag valde att använda en React-komponent utan GUI, PageController, tillsammans med React Context för att tillhandahålla state. Det är ett bra alternativ till Redux. Redux har sina positiva sidor men i den här lilla applikationen räcker React Context bra.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:05:00.000Z"
+		},
+		{
+			"id": 6,
+			"title": "React",
+			"body": "Jag valde att enbart skriva funktionskomponenter med hooks.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:03:00.000Z"
+		},
+		{
+			"id": 7,
+			"title": "Databas",
+			"body": "Databasen med alla meddelanden är en enkel in-memory array som utgår från server/message-list.json och som återställs varje gång servern startar om.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:18:00.000Z"
+		},
+		{
+			"id": 8,
+			"title": "Enhetstester",
+			"body": "Jag har bara skrivit ett test som följer klassiska AAA-mönstret. Man bör skriva fler tester på sortMessages och även överväga tester på React-komponenter och API-anropen. Enhetstester kommer alltid vara basen i autotester men Cypress-tester är ett bra komplement och TypeScript och funktionell programmering hjälper också till att förhindra fel.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:13:00.000Z"
+		},
+		{
+			"id": 9,
+			"title": "Create React App",
+			"body": "Appen är baserad på Create React App så ni kan ignorera en del kod som följer med därifrån. De använder ESLint men har dolt det. Jag har lagt in Prettier för kodformatering.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:08:00.000Z"
+		},
+		{
+			"id": 10,
+			"title": "Övrigt",
+			"body": "Jag har försökt förklara hur jag har resonerat i en del val som strider mot uppgiften men jag tror att det är lättare att diskutera lösningen muntligt.",
+			"signature": "Andreas",
+			"date": "2021-01-31T17:08:00.000Z"
+		}
+	]
+}
